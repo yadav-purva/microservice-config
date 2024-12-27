@@ -1,1 +1,11 @@
 
+eureka:
+  client:
+    fetch-registry: true  # Enable fetching the registry from Eureka
+    register-with-eureka: true  # Enable registration with Eureka
+    service-url:
+      defaultZone: http://localhost:8761/eureka  # Eureka server URL
+
+  instances:
+    prefer-ip-address: true  # Use IP address for registration instead of hostname
+
